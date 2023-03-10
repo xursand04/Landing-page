@@ -10,14 +10,21 @@ const About = () =>{
     return(
         <>
         <Box sx={{marginTop:"140px",marginLeft:'8%' }}>
-            <img src={Banner} width='90%' height={800} alt="" />
+            <img className="img-fluid" src={Banner} width='90%' height={800} alt="" />
         </Box>
+        <center>
         <Box sx={{marginTop:"80px"}}>
             <Typography variant="h2" sx={{fontFamily:'cursive', textAlign:'center'}}>About me </Typography>
             <hr style={{width:'350px',marginTop:'20px'}}/>
         </Box>
-        <Box sx={{display:'flex',marginLeft:"350px", alignItems:'center',marginTop:'100px'}}>
+        </center>
+        <center>
+
+        <Box sx={{display:'flex',width:'1300px',marginLeft:'10%', alignItems:'center',marginTop:'100px'}}>
+
             <Box sx={{width:'600px'}}>
+                <center>
+
                 <Typography variant="h5">
             Men Urinov Urinboy 2006-yil 24-fevralda tug’ilganman.
              2023-yil maktabni bitirdim. 2022-yil 
@@ -36,19 +43,23 @@ const About = () =>{
                  va biznes egasi bilan kelisha olmaganligim sababli
                   bu ishni topshirdim.
                 </Typography>
+                </center>
             </Box>
-            <Box sx={{marginLeft:'40px'}}>
-                <img src={Urinoff} width={400} alt="" />
+            <Box sx={{marginLeft:'3%'}}>
+                <img className="img-fluid" src={Urinoff} width={400} alt="" />
             </Box>
         </Box><br/><hr/>
+        </center>
+
        <Box sx={{margin:'150px 0'}}>
-        <img src={Map} width='80%' style={{marginLeft:'8%'}} height={700} alt="" />
+        <img className="img-fluid" src={Map} width='80%' style={{marginLeft:'8%'}} height={700} alt="" />
        </Box><hr/>
+       <center>
        <Box sx={{margin:'100px 0'}}>
         <Typography  variant="h2" sx={{fontFamily:'cursive',textAlign:'center'}}>Contact</Typography>
         <hr style={{width:'350px',marginTop:'20px'}}/>
        </Box>
-        <Box sx={{display:'flex',alignItems:'center',marginLeft:'30%',width:'800px',justifyContent:'space-between'}}>
+        <Box sx={{display:'flex',alignItems:'center',width:'800px',justifyContent:'space-between',textAlign:'center'}}>
             <Box>
             <Typography>Khanka, Uzbekistan</Typography>
             <Link>+998885170970 - Urinov Urinboy</Link><br/>
@@ -67,11 +78,14 @@ const About = () =>{
                 <Button variant="contained" sx={{margin:'20px 0',width:'448px'}}>Send</Button>
             </Box>
         </Box>
-        <Box sx={{alignItems:'center',textAlign:'center',marginTop:'150px',background:'#4884d8',height:'100px',padding:'40px'}}>
-            <Box sx={{width:'150px',display:'flex',justifyContent:'space-between',marginLeft:'45%',marginTop:'20px'}}>
+       </center>
+        <Box sx={{alignItems:'center',width:'100%',textAlign:'center',marginTop:'150px',background:'#4884d8',height:'150px',padding:'40px'}}>
+            <center>
+            <Box sx={{width:'150px',display:'flex',justifyContent:'space-between',marginTop:'20px'}}>
             <img src="https://www.svgrepo.com/show/434439/twitter.svg" width={60} alt="" />
             <img src="https://pcar.ru/upload/1logo-instagram-png-sem-fundo16%20copy.png?1633348162379" width={60} alt="" />
             </Box>
+            </center>
         </Box>
 
         </>
